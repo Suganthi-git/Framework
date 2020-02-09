@@ -2,32 +2,36 @@
 <testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="101110" started-at="2020-01-31T13:03:56 IST" finished-at="2020-01-31T13:05:37 IST">
+  <suite name="Default suite" duration-ms="266947" started-at="2020-02-09T14:47:46 IST" finished-at="2020-02-09T14:52:13 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="101110" started-at="2020-01-31T13:03:56 IST" finished-at="2020-01-31T13:05:37 IST">
-      <class name="com.training.sanity.tests.AddPostToTrash">
-        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.sanity.tests.AddPostToTrash@22a67b4]" name="setUpBeforeClass" is-config="true" duration-ms="48974" started-at="2020-01-31T13:03:56 IST" finished-at="2020-01-31T13:04:45 IST">
+    <test name="Default test" duration-ms="266947" started-at="2020-02-09T14:47:46 IST" finished-at="2020-02-09T14:52:13 IST">
+      <class name="com.training.sanity.tests.McreateComment">
+        <test-method status="PASS" signature="setupPublishComment()[pri:0, instance:com.training.sanity.tests.McreateComment@57855c9a]" name="setupPublishComment" is-config="true" duration-ms="144865" started-at="2020-02-09T14:47:46 IST" finished-at="2020-02-09T14:50:11 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUpBeforeClass -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.training.sanity.tests.AddPostToTrash@22a67b4]" name="setup" is-config="true" duration-ms="2" started-at="2020-01-31T13:04:45 IST" finished-at="2020-01-31T13:04:45 IST">
+        </test-method> <!-- setupPublishComment -->
+        <test-method status="PASS" signature="setupAdminLogin()[pri:0, instance:com.training.sanity.tests.McreateComment@57855c9a]" name="setupAdminLogin" is-config="true" duration-ms="50071" started-at="2020-02-09T14:50:11 IST" finished-at="2020-02-09T14:51:01 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="validLoginTest()[pri:0, instance:com.training.sanity.tests.AddPostToTrash@22a67b4]" name="validLoginTest" duration-ms="10282" started-at="2020-01-31T13:04:45 IST" finished-at="2020-01-31T13:04:55 IST">
+        </test-method> <!-- setupAdminLogin -->
+        <test-method status="PASS" signature="publishNewComment()[pri:0, instance:com.training.sanity.tests.McreateComment@57855c9a]" name="publishNewComment" duration-ms="21239" started-at="2020-02-09T14:51:01 IST" finished-at="2020-02-09T14:51:22 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validLoginTest -->
-        <test-method status="PASS" signature="movePostToTrash()[pri:1, instance:com.training.sanity.tests.AddPostToTrash@22a67b4]" name="movePostToTrash" duration-ms="40032" started-at="2020-01-31T13:04:55 IST" finished-at="2020-01-31T13:05:35 IST">
+        </test-method> <!-- publishNewComment -->
+        <test-method status="PASS" signature="setupAdminLogin()[pri:0, instance:com.training.sanity.tests.McreateComment@57855c9a]" name="setupAdminLogin" is-config="true" duration-ms="37806" started-at="2020-02-09T14:51:22 IST" finished-at="2020-02-09T14:52:00 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- movePostToTrash -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.AddPostToTrash@22a67b4]" name="tearDown" is-config="true" duration-ms="1756" started-at="2020-01-31T13:05:35 IST" finished-at="2020-01-31T13:05:37 IST">
+        </test-method> <!-- setupAdminLogin -->
+        <test-method status="PASS" signature="loginadmin()[pri:1, instance:com.training.sanity.tests.McreateComment@57855c9a]" name="loginadmin" duration-ms="12875" started-at="2020-02-09T14:52:00 IST" depends-on-methods="com.training.sanity.tests.McreateComment.publishNewComment" finished-at="2020-02-09T14:52:13 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginadmin -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.McreateComment@57855c9a]" name="tearDown" is-config="true" duration-ms="0" started-at="2020-02-09T14:52:13 IST" finished-at="2020-02-09T14:52:13 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.training.sanity.tests.AddPostToTrash -->
+      </class> <!-- com.training.sanity.tests.McreateComment -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

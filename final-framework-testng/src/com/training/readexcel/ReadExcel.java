@@ -11,14 +11,14 @@ import jxl.read.biff.BiffException;
 
 public class ReadExcel {
 	
-	public String[][] getExcelData(String fileName, String sheetName) 
+	public String[][] getExcelData(String fileName, String SheetName) 
 	   {
 			String[][] arrayExcelData = null;
 			try 
 			{
 				FileInputStream fs = new FileInputStream(fileName);
 				Workbook wb = Workbook.getWorkbook(fs);
-				Sheet sh = wb.getSheet(sheetName);
+				Sheet sh = wb.getSheet(SheetName);
 
 				int totalNoOfCols = sh.getColumns();
 				int totalNoOfRows = sh.getRows();
