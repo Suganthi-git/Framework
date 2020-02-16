@@ -5,24 +5,27 @@ import java.util.List;
 import org.testng.annotations.DataProvider;
 
 import com.training.bean.LoginBean;
+import com.training.bean.UserBean;
 import com.training.dao.ELearningDAO;
+import com.training.dao.UserDetailDAO;
 import com.training.readexcel.ApachePOIExcelRead;
 import com.training.readexcel.ReadExcel;
 
-public class LoginDataProviders {
-
+public class UserDataProviders {
 	@DataProvider(name = "db-inputs")
 	public Object [][] getDBData() {
 
-		List<LoginBean> list = new ELearningDAO().getLogins(); 
+		List<UserBean> list = new UserDetailDAO().getuser(); 
 		
 		Object[][] result = new Object[list.size()][]; 
 		int count = 0; 
-		for(LoginBean temp : list){
-			Object[]  obj = new Object[2]; 
-			obj[0] = temp.getUserName(); 
-			obj[1] = temp.getPassword(); 
-			
+		for(UserBean temp : list){
+			Object[]  obj = new Object[4]; 
+			obj[0] = temp.getUserEName(); 
+			obj[1] = temp.getEmail();
+			obj[2] = temp.getSubject();
+			obj[3] = temp.getuserMsg();
+ 			
 			result[count ++] = obj; 
 		}
 		
@@ -32,8 +35,8 @@ public class LoginDataProviders {
 	
 	@DataProvider(name = "excel-inputs")
 	public Object[][] getExcelData(){
-		String fileName ="C:\\Users\\SuganthiDhanasamy\\Desktop\\SeleniumTest.xlsx";
-		String SheetName="Sheet1";
+		String fileName ="C:\\Users\\SuganthiDhanasamy\\Desktop\\Selenium Complex case.xlsx";
+		String SheetName="Sheet2";
 		return new ApachePOIExcelRead().getExcelContent(fileName,SheetName);
 	}
 	

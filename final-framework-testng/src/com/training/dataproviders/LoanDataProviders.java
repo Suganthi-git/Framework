@@ -9,8 +9,7 @@ import com.training.dao.ELearningDAO;
 import com.training.readexcel.ApachePOIExcelRead;
 import com.training.readexcel.ReadExcel;
 
-public class LoginDataProviders {
-
+public class LoanDataProviders {
 	@DataProvider(name = "db-inputs")
 	public Object [][] getDBData() {
 
@@ -32,7 +31,7 @@ public class LoginDataProviders {
 	
 	@DataProvider(name = "excel-inputs")
 	public Object[][] getExcelData(){
-		String fileName ="C:\\Users\\SuganthiDhanasamy\\Desktop\\SeleniumTest.xlsx";
+		String fileName ="C:\\Users\\SuganthiDhanasamy\\Desktop\\Selenium Complex case.xlsx";
 		String SheetName="Sheet1";
 		return new ApachePOIExcelRead().getExcelContent(fileName,SheetName);
 	}

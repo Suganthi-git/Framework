@@ -2,36 +2,84 @@
 <testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="266947" started-at="2020-02-09T14:47:46 IST" finished-at="2020-02-09T14:52:13 IST">
+  <suite name="Default suite" duration-ms="315222" started-at="2020-02-16T22:40:10 IST" finished-at="2020-02-16T22:45:26 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="266947" started-at="2020-02-09T14:47:46 IST" finished-at="2020-02-09T14:52:13 IST">
-      <class name="com.training.sanity.tests.McreateComment">
-        <test-method status="PASS" signature="setupPublishComment()[pri:0, instance:com.training.sanity.tests.McreateComment@57855c9a]" name="setupPublishComment" is-config="true" duration-ms="144865" started-at="2020-02-09T14:47:46 IST" finished-at="2020-02-09T14:50:11 IST">
+    <test name="Default test" duration-ms="315222" started-at="2020-02-16T22:40:10 IST" finished-at="2020-02-16T22:45:26 IST">
+      <class name="com.training.regression.tests.TC067UserDetails">
+        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.regression.tests.TC067UserDetails@22a67b4]" name="setUpBeforeClass" is-config="true" duration-ms="20" started-at="2020-02-16T22:40:10 IST" finished-at="2020-02-16T22:40:10 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setupPublishComment -->
-        <test-method status="PASS" signature="setupAdminLogin()[pri:0, instance:com.training.sanity.tests.McreateComment@57855c9a]" name="setupAdminLogin" is-config="true" duration-ms="50071" started-at="2020-02-09T14:50:11 IST" finished-at="2020-02-09T14:51:01 IST">
+        </test-method> <!-- setUpBeforeClass -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.regression.tests.TC067UserDetails@22a67b4]" name="setUp" is-config="true" duration-ms="117817" started-at="2020-02-16T22:40:11 IST" finished-at="2020-02-16T22:42:09 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setupAdminLogin -->
-        <test-method status="PASS" signature="publishNewComment()[pri:0, instance:com.training.sanity.tests.McreateComment@57855c9a]" name="publishNewComment" duration-ms="21239" started-at="2020-02-09T14:51:01 IST" finished-at="2020-02-09T14:51:22 IST">
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="UserDetailsTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.training.regression.tests.TC067UserDetails@22a67b4]" name="UserDetailsTest" duration-ms="31972" started-at="2020-02-16T22:42:09 IST" data-provider="db-inputs" finished-at="2020-02-16T22:42:41 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Suresh]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[suresh@123.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Plots Subject1]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Plots Message1]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- publishNewComment -->
-        <test-method status="PASS" signature="setupAdminLogin()[pri:0, instance:com.training.sanity.tests.McreateComment@57855c9a]" name="setupAdminLogin" is-config="true" duration-ms="37806" started-at="2020-02-09T14:51:22 IST" finished-at="2020-02-09T14:52:00 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupAdminLogin -->
-        <test-method status="PASS" signature="loginadmin()[pri:1, instance:com.training.sanity.tests.McreateComment@57855c9a]" name="loginadmin" duration-ms="12875" started-at="2020-02-09T14:52:00 IST" depends-on-methods="com.training.sanity.tests.McreateComment.publishNewComment" finished-at="2020-02-09T14:52:13 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginadmin -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.McreateComment@57855c9a]" name="tearDown" is-config="true" duration-ms="0" started-at="2020-02-09T14:52:13 IST" finished-at="2020-02-09T14:52:13 IST">
+        </test-method> <!-- UserDetailsTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.regression.tests.TC067UserDetails@22a67b4]" name="tearDown" is-config="true" duration-ms="814" started-at="2020-02-16T22:42:41 IST" finished-at="2020-02-16T22:42:41 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.training.sanity.tests.McreateComment -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.regression.tests.TC067UserDetails@22a67b4]" name="setUp" is-config="true" duration-ms="104205" started-at="2020-02-16T22:42:41 IST" finished-at="2020-02-16T22:44:26 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="UserDetailsTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.training.regression.tests.TC067UserDetails@22a67b4]" name="UserDetailsTest" duration-ms="59207" started-at="2020-02-16T22:44:26 IST" data-provider="db-inputs" finished-at="2020-02-16T22:45:25 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Suganthi]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[suganthi@123.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Plots Subject1]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Plots Message1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserDetailsTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.regression.tests.TC067UserDetails@22a67b4]" name="tearDown" is-config="true" duration-ms="814" started-at="2020-02-16T22:45:25 IST" finished-at="2020-02-16T22:45:26 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.training.regression.tests.TC067UserDetails -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
